@@ -5975,3 +5975,50 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+    input.btn, input.btn:hover {
+    width: 130px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    color: #ffffff;
+    padding: 5px 20px !important;
+    background: -moz-linear-gradient(
+      top,
+      #fd8318 0%,
+      #e66c01) !important;
+    background: -webkit-gradient(
+      linear, left top, left bottom, 
+      from(#fd8318),
+      to(#e66c01)) !important;
+      to(#e66c01)) !important;
+    -moz-border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    border-radius: 20px !important;
+    border: 0px solid #2ea100 !important;
+    -moz-box-shadow:
+      0px 1px 1px rgba(000,000,000,0.3),
+      inset 0px 1px 1px rgba(255,255,255,0.5) !important;
+    -webkit-box-shadow:
+      0px 1px 1px rgba(000,000,000,0.5),
+      inset 0px 1px 1px rgba(255,255,255,0.3) !important;
+    box-shadow:
+      0px 1px 1px rgba(000,000,000,0.3),
+      inset 0px 1px 1px rgba(255,255,255,0.5) !important;
+    text-shadow:
+      0px -1px 0px rgba(000,000,000,0.2),
+      0px 1px 0px rgba(255,255,255,1) !important;
+      cursor: pointer !important;
+      margin-bottom: 5px;
+      margin-left: 2px;
+  }
+  input.btn:hover {
+    background: -webkit-gradient(
+      linear, left top, left bottom, 
+      from(#E87A02),
+      to(#D55500)) !important;
+  }
+  input.btn:active {
+    background: -webkit-gradient(
+      linear, left top, left bottom, 
+      from(#fd8318),
+      to(#e66c01)) !important;
+  }
