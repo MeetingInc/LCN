@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<title>Modal | La Casa del Niple</title>
+<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+
 		<style type="text/css">
 		body {
 			margin: 0px;
@@ -120,6 +122,31 @@
 	}
 
 		</style>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+		<script src="js/languages/jquery.validationEngine-es.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		jQuery(document).ready(function(){
+			// binds form submission and fields to the validation engine
+			jQuery("#form").validationEngine();
+		});
+
+		/**
+		*
+		* @param {jqObject} the field where the validation applies
+		* @param {Array[String]} validation rules for this field
+		* @param {int} rule index
+		* @param {Map} form options
+		* @return an error string if validation failed
+		*/
+		function checkHELLO(field, rules, i, options){
+			if (field.val() != "HELLO") {
+				// this allows to use i18 for the error msgs
+				return options.allrules.validate2fields.alertText;
+			}
+		}
+	</script>
 	</head>
 	<body>
 	<div class="modalProducto">
@@ -132,11 +159,11 @@
 			</div>
 			<div class="cont">
 				<p>Consulte precio y stock para este art&iacute;culo</p>
-				<form action="#" class="modalform">
+				<form action="#" class="modalform" id="form">
 					<label for="data">Email o Telefono:</label><br>
-					<input type="text" id="data" />
+					<input type="text" id="data" class="validate[required]" />
 					<label for="msj">Comentarios: </label><br>
-					<textarea id="msj"></textarea>
+					<textarea id="msj" class="validate[required]"></textarea>
 					<input type="submit" class="btn" value="Enviar" />
 				</form>
 			</div>
