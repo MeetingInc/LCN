@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<title>Modal | La Casa del Niple</title>
+		<style type="text/css">
+		body {
+			margin: 0px;
+			padding:0px;
+			overflow: hidden;
+		}
+		  @font-face {
+		 font-family: 'ColaborateThin';
+		 src: url('fonts/Colaborate/ColabThi-webfont.eot');
+		 src: local('☺'), url('../fonts/Colaborate/ColabThi-webfont.woff') format('woff'),
+		 url('fonts/Colaborate/ColabThi-webfont.ttf') format('truetype'),
+		 url('fonts/Colaborate/ColabThi-webfont.svgL') format('svg');
+		 font-weight: normal;
+		 font-style: normal;
+}
+		.modalProducto {
+		width: 690px;
+		height: 360px;
+		background: white;
+		}
+		.modalProducto .title {
+		height: 30px;
+		width: 689px;
+		color: white;
+		background: #1a6cb9;
+		font-family: 'ColaborateThin';
+		font-size: 22px;
+		padding-left: 6px;
+		padding-top: 7px;
+}
+		.modalProducto div.img, .modalProducto div.cont {
+			float: left;
+		}
+		.modalProducto div.img {
+			width: 309px;
+			margin-top: 7px;
+			height: 307px;
+			margin-left: 7px;
+}
+		.modalProducto div.cont {
+			width: 326px;
+			color: #444444;
+			font-size: 16px;
+			margin-left: 40px;
+			padding-top: 4px;
+		}
+		.modalProducto	form input {
+			width: 270px;
+			margin-top: 6px;
+			padding:7px;
+			margin-bottom: 10px;
+			color:grey;
+			font-family: Arial, Helvetica; 
+}
+			.modalProducto form textarea {
+			width: 270px;
+			margin-top: 6px;
+			padding: 7px;
+			margin-bottom: 10px;
+			height: 102px;
+			color:grey;
+			font-family: Arial, Helvetica; 
+}
+		.modalProducto	form label{
+			font-family: arial;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.modalProducto p {
+		font-family: arial;
+		margin-bottom: 22px;
+		}
+		.modalProducto input.btn, .modalProducto input.btn:hover {
+		width: 130px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #ffffff;
+		padding: 7px 20px;
+		background: -moz-linear-gradient(
+			top,
+			#fd8318 0%,
+			#e66c01);
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#fd8318),
+			to(#e66c01));
+			to(#e66c01));
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		border: 0px solid #2ea100;
+		-moz-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 1px 1px rgba(255,255,255,0.5);
+		-webkit-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 1px 1px rgba(255,255,255,0.5);
+		box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 1px 1px rgba(255,255,255,0.5);
+		text-shadow:
+			0px -1px 0px rgba(000,000,000,0.2),
+			0px 1px 0px rgba(255,255,255,1);
+			cursor: pointer;
+	}
+	.modalProducto input.btn:hover {
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#E87A02),
+			to(#D55500));
+	}
+	.modalProducto input.btn:active {
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#fd8318),
+			to(#e66c01));
+	}
+
+		</style>
+	</head>
+	<body>
+	<div class="modalProducto">
+		<div class="title">
+			Mosaico Acero Pulido
+	</div>
+		<div class="modalwrap">
+			<div class="img">
+				<img src="img/grifo2.png">
+			</div>
+			<div class="cont">
+				<p>Consulte precio y stock para este art&iacute;culo</p>
+				<form action="#" class="modalform">
+					<label for="data">Email o Telefono:</label><br>
+					<input type="text" id="data" />
+					<label for="msj">Comentarios: </label><br>
+					<textarea id="msj"></textarea>
+					<input type="submit" class="btn" value="Enviar" />
+				</form>
+			</div>
+		</div>
+	</div>
+	</body>
+	</html>	

@@ -19,10 +19,15 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.css">
         <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+         <link rel="stylesheet" href="css/colorbox.css">
         <link rel="stylesheet" href="css/main.css">
         <script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
-        
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script>
+            $(document).ready(function(){                
+                $(".iframe").colorbox({iframe:true, width:705, height:389});
+            });
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -49,7 +54,7 @@
                     </div>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="home active"><a href="#">Home</a></li>
+                            <li class="home"><a href="#">Home</a></li>
                             <!--Productos DropDown -->
                             <li class="productos dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b> </a>
@@ -81,49 +86,228 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container data">
+            
+            <!-- Menu vertical -->
+            <div class="vertical">
+                <h3>Productos</h3>
+                <ul class="verticalMenu">
 
-            <!--2 Columnas-->
-            <div class="row empresa">
-                <div class="span6">
-                    <h3>Empresa</h3>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum vehicula arcu, sed mollis mi pulvinar id. Aenean sit amet metus posuere nulla lacinia iaculis eget quis mi. Vivamus fringilla, nunc sed laoreet faucibus, lorem nunc dignissim libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum vehicula arcu, sed mollis mi pulvinar id.</p>
-                    <ul class="thumbnails">
-                        <li class="span4">
-                            <a class="thumbnail" href="#">
-                                <img src="http://placehold.it/360x240" alt="">
-                            </a>
-                            <h3>Basic marketing site</h3>
-                            <p>Featuring a hero unit for a primary message and three supporting elements.</p>
-                        </li>
-                        <li class="span4">
-                            <a class="thumbnail" href="#">
-                                <img src="http://placehold.it/360x240" alt="">
-                            </a>
-                            <h3>Fluid layout</h3>
-                            <p>Uses our new responsive, fluid grid system to create seamless liquid layout.</p>
-                        </li>
-                        <li class="span4">
-                            <a class="thumbnail" href="#">
-                                <img src="http://placehold.it/360x240" alt="">
-                            </a>
-                            <h3>Starter template</h3>
-                            <p>A barebones HTML document with all the Bootstrap CSS and javascript included.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="span6">
-                    <h2>Soluciones Recientes</h2>
-                    <h3>Titulo noticia</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum vehicula arcu, sed mollis mi pulvinar id. Aenean sit amet metus posuere nulla lacinia iaculis eget quis mi. Vivamus fringilla, nunc sed laoreet faucibus, lorem nunc dignissim libero.</p>
-                    <a href="#" class="ampliar"></a>
-                    <div class="shareBox"></div>
-                    <div class="clearfix"></div>
-                </div>
+                    <!-- Hogar -->
+                    <li>
+                        <dl>
+                            <dt>Hogar</dt>
+                            <dd><a href="#">Paneles solares</a></dd>
+                            <dd><a href="#">Iluminacion</a></dd>
+                            <dd><a href="#">Extractores y campanas</a></dd>    
+                            <dd><a href="#">Puertas</a></dd>
+                            <dd><a href="#">Muebles </a></dd>
+                            <dd><a href="#">Espejos y botiquines</a></dd>
+                            <dd><a href="#">Accesorios</a></dd>
+                        </dl>
+                    </li>
+
+                    <!-- Sanitaria -->
+                    <li>
+                        <dl>
+                            <dt>Sanitaria</dt>
+                            <dd><a href="#">Tuberias y piezas</a></dd>
+                            <dd><a href="#">Revestimientos</a></dd>
+                            <dd><a href="#" class="active">Grifer&iacute;a</a></dd>    
+                            <dd><a href="#">Paneles de ducha</a></dd>
+                            <dd><a href="#">Bachas</a></dd>
+                            <dd><a href="#">Mesadas</a></dd>
+                            <dd><a href="#">Tanques</a></dd>
+                            <dd><a href="#">Bombas</a></dd>
+                            <dd><a href="#">Cisternas</a></dd>
+                            <dd><a href="#">Loza sanitaria</a></dd>
+                        </dl>
+                    </li>
+
+                    <!-- Ferretería -->
+                    <li>
+                        <dl>
+                            <dt>Ferreter&iacute;a</dt>
+                            <dd><a href="#">Herramientas</a></dd>
+                            <dd><a href="#">Pinturas</a></dd>
+                            <dd><a href="#">Mangueras</a></dd>    
+                            <dd><a href="#">Riego</a></dd>
+                            <dd><a href="#">Varios</a></dd>
+                        </dl>
+                    </li>
+
+                     <!-- Barraca -->
+                    <li>
+                        <dl>
+                            <dt>Barraca</dt>
+                            <dd><a href="#">Material grueso</a></dd>
+                            <dd><a href="#">Hierro</a></dd>
+                            <dd><a href="#">Tejas</a></dd>    
+                            <dd><a href="#">Hormig&oacute;n</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div><!-- /vertical menu -->
+
+            <div class="contenido">
+
+                <!-- Migas de pan -->
+                <ul class="breadcumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="sep">></li>
+                    <li><a href="#">Productos</a></li>
+                    <li class="sep">></li>
+                    <li><a href="#">Sanitaria</a></li>
+                    <li class="sep">></li>
+                    <li>Grifer&iacute;a</li>
+                </ul>
+
+                <div class="productos">
+                    <h2 class="generic">Griferia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum vehicula arcu, sed mollis mi pulvinar id. Aenean sit amet metus posuere nulla lacinia iaculis eget quis mi. Vivamus fringilla, nunc sed laoreet faucibus, lorem nunc dignissim libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <div class="items">
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item fleft">
+                            <div class="img">
+                                <!-- Imagen del item -->
+                                <a class="iframe cboxElement" href="productos_modal.html"><img src="img/grifo.png" alt=""></a>
+                            </div>
+                            <div class="title">
+                                <!-- Nombre del item -->
+                                <h4>Mosaico</h4>
+                                <!-- Categoría del item -->
+                                <h5>Acero pulido</h5>
+                                <a href="#" class="more iframe cboxElement"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
 
             </div>
+            <div class="clear"></div>
         </div> <!-- /container -->
-
             <div class="separador">
                 <img src="img/shadowSeparator.png" alt=""/ >
             </div>              
@@ -210,5 +394,7 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+        <script type="text/javascript" language="javascript" src="js/jquery.colorbox.js"></script>
+        
     </body>
 </html>
