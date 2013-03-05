@@ -373,6 +373,9 @@ div.vertical {
 		width: 100px;
 		height: 40px;
 	}
+	.navbar a.active {
+		color: #0c69b2 !important;
+	}
 
 	h2 {
   	margin: 20px 0;
